@@ -4,6 +4,95 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-1" value="NetSuite" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="41" y="20" width="150" height="1189" as="geometry" />
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-2" value="WTS System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="255" y="20" width="150" height="1189" as="geometry" />
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-3" value="Create WTS Integration Record&#xa;(Status: Initial Sync)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-1" target="wVcE6h7tUkfEvb0qKVJi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="167" y="200" />
+              <mxPoint x="167" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-4" value="Send 2 Status Arrays&#xa;(RECV &amp; PCTTM)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-1" target="wVcE6h7tUkfEvb0qKVJi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-5" value="Acknowledgment" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-2" target="wVcE6h7tUkfEvb0qKVJi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="409" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-6" value="Update WTS Integration Record&#xa;(Status: Processed)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-1" target="wVcE6h7tUkfEvb0qKVJi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="167" y="485" />
+              <mxPoint x="167" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-7" value="Item Fulfillment Status Change" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-1" target="wVcE6h7tUkfEvb0qKVJi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="167" y="618" />
+              <mxPoint x="167" y="648" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-8" value="Check for existing&#xa;WTS Integration Record" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-1" target="wVcE6h7tUkfEvb0qKVJi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="167" y="724" />
+              <mxPoint x="167" y="754" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-9" value="Create new WTS Integration Record&#xa;(Status: Pending)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-1" target="wVcE6h7tUkfEvb0qKVJi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="167" y="879" />
+              <mxPoint x="167" y="909" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-10" value="Send 1 Status Array" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-1" target="wVcE6h7tUkfEvb0qKVJi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="963" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-11" value="Acknowledgment" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="wVcE6h7tUkfEvb0qKVJi-2" target="wVcE6h7tUkfEvb0qKVJi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="1017" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-12" value="Item Fulfillment Created" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="21" y="95" width="190" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-13" value="First Synchronization Flow" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="91" y="250" width="264" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-14" value="Subsequent Status Change Flow" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="91" y="535" width="264" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-15" value="Found: Status = Pending" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="20" y="774" width="193" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="wVcE6h7tUkfEvb0qKVJi-16" value="Key Distinction:&#xa;Initial Sync = 2 Status Arrays&#xa;Pending = 1 Status Array" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="91" y="1037" width="264" height="87" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
